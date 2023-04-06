@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/Gemba-Kaizen/menumeister-api/config"
-	"github.com/Gemba-Kaizen/menumeister-api/pkg/ping"
+	"github.com/Gemba-Kaizen/menumeister-api/pkg/auth"
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,7 +21,7 @@ func main() {
 	r := gin.Default()
 
 	// get registered routes function from ping package
-	ping.RegisterRoutes(r, &c)
+	auth.RegisterRoutes(r, &c)
 
 	r.Run(c.Port)
 }
