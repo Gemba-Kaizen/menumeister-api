@@ -12,6 +12,10 @@ $ go install google.golang.org/protobuf/cmd/protoc-gen-go@vv1.30.0
 $ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.3.0
 ```
 
+### Docker
+1. make docker
+2. docker run -p 8080:8080 menumeister-api
+
 ### Dependencies
 These exists in go.mod file, have a look there and `go get <library>` accordingly when you start a new repo.
 

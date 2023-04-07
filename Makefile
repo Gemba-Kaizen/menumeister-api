@@ -9,3 +9,6 @@ proto:
 
 server:
 	go run cmd/main.go
+
+docker:
+	docker build --tag menumeister-api .
