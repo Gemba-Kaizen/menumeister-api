@@ -72,3 +72,5 @@ This is the normal conventional directory structure, you could include an intern
 3. ping directory in pkg is an example microservice that this api gateway wants to call
   - pb directory houses the protobuf message strucutres that is used in gRPC communication
 
+### Multi-databases
+In internal directory exists docker compose file to up the postgres image. It sets initDb.sh script in the entrypoint when creating the postgres container, this allows us to create multiple databases in 1 container
