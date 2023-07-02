@@ -43,6 +43,7 @@ Inspiration: https://levelup.gitconnected.com/microservices-with-go-grpc-api-gat
   - This would be what the frontend communicates with
 
 ## Poject structure
+```
 menumeister-api/
 ├── cmd/
 │   ├── main.go
@@ -62,7 +63,7 @@ menumeister-api/
 ├── go.sum
 ├── Makefile
 └── Other docker stuff, add as needed
-
+```
 This is the normal conventional directory structure, you could include an internal directory in the same level as cmd, this directory will house logic that is internal to this application only.
 
 ### Key notes
